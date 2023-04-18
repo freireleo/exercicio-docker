@@ -5,6 +5,8 @@ services:
       build: .
       image: postman_report
       command:
+        cd src
+        mkdir report
         run Meus_Testes.postman_collection.json
         --environment Globals.postman_environment.json
         -r html,cli
@@ -19,6 +21,8 @@ services:
       build: .
       image: postman_report
       command:
+        cd src
+        mkdir report
         run Meus_Testes.postman_collection.json
         --environment Globals.postman_environment.json
         -r html,cli
