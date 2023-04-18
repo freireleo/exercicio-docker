@@ -17,7 +17,7 @@ jobs:
         run: docker-compose up
         
       - name: Step 2 - Run Docker 2
-        run: docker-compose -f docker-compose.yml -f docker-compose.qa.yml up -d
+        run: docker-compose -f docker-compose.yml -f up -d
         
       - name: Step 3 - Attach Report
         uses: actions/upload-artifact@v2
