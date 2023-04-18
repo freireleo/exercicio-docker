@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "894a5d10-1b21-49fd-bd18-9e062801e7b4",
+		"name": "Meus_Testes",
+		"description": "Exemplo de coleção",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26357395"
+	},
+	"item": [
+		{
+			"name": "{{url}}/users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://jsonplaceholder.typicode.com/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[ \r\n    { \r\n        \"id\": 11, \r\n        \"name\": \"Leonardo\", \r\n        \"username\": \"Bret\", \r\n        \"email\": \"Sincere@april.biz\", \r\n        \"address\": { \r\n            \"street\": \"Kulas Light\" , \r\n            \"suite\": \"Apt. 556\", \r\n            \"city\": \"Gwenborough\", \r\n            \"zipcode\": \"92998-3874\", \r\n            \"geo\": { \r\n                \"lat\": \"-37.3159\", \r\n                \"lng\": \"81.1496\" \r\n            } \r\n        }, \r\n        \"telefone\": \"1-770-736-8031 x56442\", \r\n        \"site\": \"hildegard.org\", \r\n        \"empresa\": { \r\n            \"nome\": \"Romaguera-Crona\",\r\n            \"catchPhrase\": \"Rede neural cliente-servidor de várias camadas\", \r\n            \"bs\": \"aproveite os mercados eletrônicos em tempo real\" \r\n        } \r\n    } \r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/users/2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/users/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/users/?name=Ervin Howell",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/users/?name=Ervin Howell",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ervin Howell"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/users/?username=Samantha",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/users/?username=Samantha",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Samantha"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/users/?website=kale.biz",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/?website=kale.biz",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "website",
+							"value": "kale.biz"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/users/?email=Rey.Padberg@karina.biz",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/?email=Rey.Padberg@karina.biz",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "Rey.Padberg@karina.biz"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
